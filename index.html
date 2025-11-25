@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Hexlet GameZone – Магазин игр и консолей</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta
+    name="description"
+    content="Онлайн-магазин игр, консолей и аксессуаров. Быстрая доставка, выгодные цены, предзаказы новинок."
+  >
+  <link rel="stylesheet" href="style/reset.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body id="top">
+<header class="header">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">
+      <img src="Image/logo.svg" alt="Логотип SynteX GameZone" width="32" height="32">
+      <span>Hexlet GameZone</span>
+    </a>
+
+    <!-- Бургер -->
+    <button class="burger" id="burger" aria-label="Открыть меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Навигация -->
+    <nav class="nav" id="nav">
+      <a href="index.html" class="nav__link nav__link--active">Главная</a>
+      <a href="catalog.html" class="nav__link">Каталог</a>
+      <a href="about.html" class="nav__link">О нас</a>
+      <a href="contact.html" class="nav__link">Контакты</a>
+      <button class="header__cta header__cta--mobile">Войти</button>
+    </nav>
+
+    <button class="header__cta header__cta--desktop">Войти</button>
+  </div>
+</header>
+
+
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div>
+          <div class="hero__badge">
+            <span class="hero__badge-dot"></span>
+            Новые релизы каждую неделю
+          </div>
+          <h1 class="hero__title">Игровая зона нового поколения</h1>
+          <p class="hero__subtitle">
+            Консоли, аксессуары и цифровые издания. Собери свою идеальную коллекцию игр
+            в одном месте.
+          </p>
+          <div class="hero__cta-row">
+            <a href="catalog.html">
+            <button  class="btn-primary">Перейти в каталог</button>
+            </a>
+          </div>
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <span class="hero__stat-number">24/7</span>
+              <span>поддержка</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-number">3 дня</span>
+              <span>средний срок доставки</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <article class="hero__card">
+            <div class="hero__image" role="img">
+              <img src="/web_werst/Lesson_praktic/Image/image.png" alt="image-hero">
+            </div>
+            <div class="hero__label">
+              <span class="hero__label-dot"></span>
+              Топ-игры со скидкой до −40%
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- КАТЕГОРИИ -->
+    <section class="section">
+      <div class="container">
+        <header class="section__header">
+          <div>
+            <h2 class="section__title">Категории</h2>
+            <p class="section__subtitle">
+              Выбирай платформу, жанр и создавай свою библиотеку.
+            </p>
+          </div>
+        </header>
+        <div class="categories">
+       <a href="#game__for__pc" class="category-card-link">
+        <article class="category-card">
+        <h3 class="category-card__title">Игры для PC</h3>
+        <p class="category-card__text">Цифровые ключи и коллекционные издания.</p>
+        </article>
+      </a>
+
+       <a href="#game__for__playstation" class="category-card-link">
+        <article class="category-card">
+        <h3 class="category-card__title">PlayStation</h3>
+        <p class="category-card__text">Эксклюзивы и хиты последних лет.</p>
+        </article>
+       </a>
+
+       <a href="#xbox" class="category-card-link">
+        <article class="category-card">
+        <h3 class="category-card__title">Xbox</h3>
+        <p class="category-card__text">Игры, подписки и аксессуары.</p>
+        </article>
+      </a>
+
+       <a href="#accessories" class="category-card-link">
+        <article class="category-card">
+        <h3 class="category-card__title">Аксессуары</h3>
+        <p class="category-card__text">Геймпады, наушники, клавиатуры и другое.</p>
+        </article>
+       </a>
+   </div>
+  </div>
+</section>
+
+       <!-- Игры для PC -->
+    <section id="game__for__pc" class="section">
+      <div class="container">
+        <header class="section__header">
+          <div>
+            <h2 class="section__title">Игры для PC</h2>
+            <p class="section__subtitle">Популярные игры для компьютеров</p>
+          </div>
+          <a href="catalog.html" class="nav__link">Смотреть все</a>
+        </header>
+        <div class="products">
+          <!-- 1 -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <picture>
+                <img src="/web_werst/Lesson_praktic/Games/Minecraft.png" alt="Minecraft" height="100">
+              </picture>
+              <div class="product-card__badge">Скидка −30%</div>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Minecraft</h3>
+              <div class="product-card__meta">
+                <span>PC / PS5 / Xbox</span>
+                <span class="product-card__price">1 990 ₸</span>
+              </div>
+              <button class="product-card__btn">В корзину</button>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <picture>
+                <img src="/web_werst/Lesson_praktic/Games/the-forest.webp" alt="The Forest" height="100">
+              </picture>
+              <div class="product-card__badge">Новинка</div>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">The Forest</h3>
+              <div class="product-card__meta">
+                <span>PC</span>
+                <span class="product-card__price">4 000 ₸</span>
+              </div>
+              <button class="product-card__btn">В корзину</button>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <picture>
+                <img src="/web_werst/Lesson_praktic/Games/doom.avif" alt="DOOM" height="100">
+              </picture>
+              <div class="product-card__badge">Хит</div>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">DOOM</h3>
+              <div class="product-card__meta">
+                <span>PC / PS4</span>
+                <span class="product-card__price">2 890 ₸</span>
+              </div>
+              <button class="product-card__btn">В корзину</button>
+            </div>
+          </article>
+
+          <!-- 4 -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <picture>
+                <img src="/web_werst/Lesson_praktic/Games/Horizon_Forbidden_West.jpg" alt="Horizon Zero Dawn" height="100">
+              </picture>
+              <div class="product-card__badge">Топ продаж</div>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Horizon Zero Dawn</h3>
+              <div class="product-card__meta">
+                <span>PC</span>
+                <span class="product-card__price">5 990 ₸</span>
+              </div>
+              <button class="product-card__btn">В корзину</button>
+            </div>
+          </article>
+
+          <!-- 5 -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <picture>
+                <!-- потом можешь заменить на обложку Cyberpunk -->
+                <img src="/web_werst/Lesson_praktic/Games/cyberpunk.jpg" alt="Cyberpunk 2077" height="100">
+              </picture>
+              <div class="product-card__badge">Скидка −40%</div>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Cyberpunk 2077</h3>
+              <div class="product-card__meta">
+                <span>PC</span>
+                <span class="product-card__price">8 490 ₸</span>
+              </div>
+              <button class="product-card__btn">В корзину</button>
+            </div>
+          </article>
+
+          <!-- 6 -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <picture>
+                <!-- временно reuse, потом поменяешь -->
+                <img src="/web_werst/Lesson_praktic/Games/valorant.20ed7782-0eda-4f9d-b421-4cc47492edc6" alt="Valorant" height="100">
+              </picture>
+              <div class="product-card__badge">Free-to-play</div>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Valorant</h3>
+              <div class="product-card__meta">
+                <span>PC</span>
+                <span class="product-card__price">0 ₸</span>
+              </div>
+              <button class="product-card__btn">Играть</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- PlayStation -->
+    <section id="game__for__playstation" class="section">
+      <div class="container">
+        <header class="section__header">
+          <div>
+            <h2 class="section__title">PlayStation</h2>
+            <p class="section__subtitle">Популярные игры для PlayStation</p>
+          </div>
+          <a href="catalog.html" class="nav__link">Смотреть все</a>
+        </header>
+
+        <div class="products">
+          <!-- 1 -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <picture>
+                <!-- тут можно будет поставить обложку God of War -->
+                <img src="/web_werst/Lesson_praktic/Games/god-of-wae.jpg" alt="God of War" height="100">
+              </picture>
+              <div class="product-card__badge">Хит</div>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">God of War</h3>
+              <div class="product-card__meta">
+                <span>PS4 / PS5</span>
+                <span class="product-card__price">7 490 ₸</span>
+              </div>
+              <button class="product-card__btn">В корзину</button>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <picture>
+                <img src="/web_werst/Lesson_praktic/Games/Horizon_Forbidden_West.jpg" alt="Horizon Forbidden West" height="100">
+              </picture>
+              <div class="product-card__badge">Топ продаж</div>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Horizon Forbidden West</h3>
+              <div class="product-card__meta">
+                <span>PS5</span>
+                <span class="product-card__price">9 990 ₸</span>
+              </div>
+              <button class="product-card__btn">В корзину</button>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <picture>
+                <!-- временная обложка -->
+                <img src="/web_werst/Lesson_praktic/Games/the-last.png" alt="The Last of Us Part II" height="100">
+              </picture>
+              <div class="product-card__badge">Хит</div>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">The Last of Us Part II</h3>
+              <div class="product-card__meta">
+                <span>PS4 / PS5</span>
+                <span class="product-card__price">8 490 ₸</span>
+              </div>
+              <button class="product-card__btn">В корзину</button>
+            </div>
+          </article>
+
+          <!-- 4 -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <picture>
+                <img src="/web_werst/Lesson_praktic/Games/ghost.jpg" alt="Ghost of Tsushima" height="100">
+              </picture>
+              <div class="product-card__badge">Новинка</div>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Ghost of Tsushima</h3>
+              <div class="product-card__meta">
+                <span>PS4 / PS5</span>
+                <span class="product-card__price">7 990 ₸</span>
+              </div>
+              <button class="product-card__btn">В корзину</button>
+            </div>
+          </article>
+
+          <!-- 5 -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <picture>
+                <!-- временная обложка -->
+                <img src="/web_werst/Lesson_praktic/Games/Marvel’sSpiderMan2.png" alt="Marvel’s Spider-Man 2" height="100">
+              </picture>
+              <div class="product-card__badge">Предзаказ</div>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Marvel’s Spider-Man 2</h3>
+              <div class="product-card__meta">
+                <span>PS5</span>
+                <span class="product-card__price">12 490 ₸</span>
+              </div>
+              <button class="product-card__btn">В корзину</button>
+            </div>
+          </article>
+
+          <!-- 6 -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <picture>
+                <!-- временная обложка -->
+                <img src="/web_werst/Lesson_praktic/Games/gran.webp" alt="Gran Turismo 7" height="100">
+              </picture>
+              <div class="product-card__badge">Скидка −20%</div>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Gran Turismo 7</h3>
+              <div class="product-card__meta">
+                <span>PS5</span>
+                <span class="product-card__price">6 990 ₸</span>
+              </div>
+              <button class="product-card__btn">В корзину</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Xbox -->
+    <section id="xbox" class="section">
+      <div class="container">
+        <header class="section__header">
+          <div>
+            <h2 class="section__title">Xbox</h2>
+            <p class="section__subtitle">Популярные игры для Xbox</p>
+          </div>
+          <a href="catalog.html" class="nav__link">Смотреть все</a>
+        </header>
+        <div class="products">
+          <!-- 1 -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <picture>
+                <!-- временная обложка -->
+                <img src="/web_werst/Lesson_praktic/Games/forza.33a348aa-892d-49b8-9ef2-6ff06c22cf96" alt="Forza Horizon 5" height="100">
+              </picture>
+              <div class="product-card__badge">Топ продаж</div>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Forza Horizon 5</h3>
+              <div class="product-card__meta">
+                <span>Xbox Series X/S</span>
+                <span class="product-card__price">9 490 ₸</span>
+              </div>
+              <button class="product-card__btn">В корзину</button>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <picture>
+                <!-- временная обложка -->
+                <img src="/web_werst/Lesson_praktic/Games/halo.png" alt="Halo Infinite" height="100">
+              </picture>
+              <div class="product-card__badge">Хит</div>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Halo Infinite</h3>
+              <div class="product-card__meta">
+                <span>Xbox / PC</span>
+                <span class="product-card__price">7 490 ₸</span>
+              </div>
+              <button class="product-card__btn">В корзину</button>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <picture>
+                <!-- временная обложка -->
+                <img src="/web_werst/Lesson_praktic/Games/Sea_of_thieves_cover_art.jpg" alt="Sea of Thieves" height="100">
+              </picture>
+              <div class="product-card__badge">Online</div>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Sea of Thieves</h3>
+              <div class="product-card__meta">
+                <span>Xbox / PC</span>
+                <span class="product-card__price">4 990 ₸</span>
+              </div>
+              <button class="product-card__btn">В корзину</button>
+            </div>
+          </article>
+
+          <!-- 4 -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <picture>
+                <!-- временная обложка -->
+                <img src="/web_werst/Lesson_praktic/Games/gears.jpg" alt="Gears 5" height="100">
+              </picture>
+              <div class="product-card__badge">Хит</div>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Gears 5</h3>
+              <div class="product-card__meta">
+                <span>Xbox One / Series</span>
+                <span class="product-card__price">5 490 ₸</span>
+              </div>
+              <button class="product-card__btn">В корзину</button>
+            </div>
+          </article>
+
+          <!-- 5 -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <picture>
+                <!-- временная обложка -->
+                <img src="/web_werst/Lesson_praktic/Games/stanfieald.jpg" alt="Starfield" height="100">
+              </picture>
+              <div class="product-card__badge">Новинка</div>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Starfield</h3>
+              <div class="product-card__meta">
+                <span>Xbox / PC</span>
+                <span class="product-card__price">11 990 ₸</span>
+              </div>
+              <button class="product-card__btn">В корзину</button>
+            </div>
+          </article>
+
+          <!-- 6 -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <picture>
+                <!-- временная обложка -->
+                <img src="/web_werst/Lesson_praktic/Games/grounded.jpg" alt="Grounded" height="100">
+              </picture>
+              <div class="product-card__badge">Co-op</div>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Grounded</h3>
+              <div class="product-card__meta">
+                <span>Xbox / PC</span>
+                <span class="product-card__price">3 490 ₸</span>
+              </div>
+              <button class="product-card__btn">В корзину</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Аксессуары -->
+    <section id="accessories" class="section">
+      <div class="container">
+        <header class="section__header">
+          <div>
+            <h2 class="section__title">Аксессуары</h2>
+            <p class="section__subtitle">Аксессуары для хорошей игры</p>
+          </div>
+          <a href="catalog.html" class="nav__link">Смотреть все</a>
+        </header>
+
+        <div class="products">
+          <!-- 1 -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <picture>
+                <!-- сюда потом поставишь фото геймпада -->
+                <img src="/web_werst/Lesson_praktic/Games/gamepad.png" alt="Геймпад DualSense" height="100">
+              </picture>
+              <div class="product-card__badge">Хит</div>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Геймпад DualSense</h3>
+              <div class="product-card__meta">
+                <span>Для PlayStation 5</span>
+                <span class="product-card__price">29 990 ₸</span>
+              </div>
+              <button class="product-card__btn">В корзину</button>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <picture>
+                <!-- временная картинка -->
+                <img src="/web_werst/Lesson_praktic/Games/xbox-gamepad.jpg" alt="Геймпад Xbox Wireless" height="100">
+              </picture>
+              <div class="product-card__badge">Новинка</div>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Геймпад Xbox Wireless</h3>
+              <div class="product-card__meta">
+                <span>Xbox / PC</span>
+                <span class="product-card__price">24 990 ₸</span>
+              </div>
+              <button class="product-card__btn">В корзину</button>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <picture>
+                <!-- временная картинка -->
+                <img src="/web_werst/Lesson_praktic/Games/garne.png" alt="Игровая гарнитура" height="100">
+              </picture>
+              <div class="product-card__badge">Топ продаж</div>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Игровая гарнитура</h3>
+              <div class="product-card__meta">
+                <span>PC / Консоли</span>
+                <span class="product-card__price">19 990 ₸</span>
+              </div>
+              <button class="product-card__btn">В корзину</button>
+            </div>
+          </article>
+
+          <!-- 4 -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <picture>
+                <!-- временная картинка -->
+                <img src="/web_werst/Lesson_praktic/Games/klava.jpg" alt="Механическая клавиатура" height="100">
+              </picture>
+              <div class="product-card__badge">Скидка −15%</div>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Механическая клавиатура</h3>
+              <div class="product-card__meta">
+                <span>PC</span>
+                <span class="product-card__price">17 490 ₸</span>
+              </div>
+              <button class="product-card__btn">В корзину</button>
+            </div>
+          </article>
+
+          <!-- 5 -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <picture>
+                <!-- временная картинка -->
+                <img src="/web_werst/Lesson_praktic/Games/mish.webp" alt="Игровая мышь" height="100">
+              </picture>
+              <div class="product-card__badge">Хит</div>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Игровая мышь</h3>
+              <div class="product-card__meta">
+                <span>PC</span>
+                <span class="product-card__price">9 990 ₸</span>
+              </div>
+              <button class="product-card__btn">В корзину</button>
+            </div>
+          </article>
+
+          <!-- 6 -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <picture>
+                <!-- временная картинка -->
+                <img src="/web_werst/Lesson_praktic/Games/gamepad-podts.webp" alt="Подставка для геймпада" height="100">
+              </picture>
+              <div class="product-card__badge">Новинка</div>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Подставка для геймпада</h3>
+              <div class="product-card__meta">
+                <span>Универсальная</span>
+                <span class="product-card__price">4 490 ₸</span>
+              </div>
+              <button class="product-card__btn">В корзину</button>
+            </div>
+          </article>
+        </div>
+
+        <!-- БЛОК ПОЧЕМУ МЫ + ПОДПИСКА -->
+        <div class="section__header" style="margin-top: 26px;">
+          <div>
+            <h2 class="section__title">Почему Hexlet GameZone?</h2>
+            <p class="section__subtitle">Коротко о преимуществах магазина.</p>
+          </div>
+        </div>
+
+        <div class="benefits">
+          <article class="benefit-card">
+            <h3 class="benefit-card__title">Официальные ключи</h3>
+            <p>Мы работаем только с проверенными издателями и партнёрами.</p>
+          </article>
+          <article class="benefit-card">
+            <h3 class="benefit-card__title">Быстрая доставка</h3>
+            <p>Цифровые игры приходят за пару минут, физические — в среднем за 3 дня.</p>
+          </article>
+          <article class="benefit-card">
+            <h3 class="benefit-card__title">Поддержка 24/7</h3>
+            <p>Помогаем с активацией, оплатой и выбором игр в любое время.</p>
+          </article>
+        </div>
+
+        <section class="newsletter" aria-labelledby="newsletter-title">
+          <div class="newsletter__text">
+            <h3 id="newsletter-title" class="newsletter__title">
+              Узнавай о скидках первым
+            </h3>
+            <p class="newsletter__subtitle">
+              Подпишись на рассылку и получи промокод на первую покупку.
+            </p>
+          </div>
+          <form class="newsletter__form" action="#" method="post">
+            <input
+              class="newsletter__input"
+              type="email"
+              name="email"
+              required
+              placeholder="Твой email"
+            >
+            <button class="btn-primary" type="submit">Подписаться</button>
+          </form>
+        </section>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>© 2025 Hexlet GameZone. Все права защищены.</div>
+      <div class="footer__links">
+        <a href="about.html">О компании</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="contact.html">Поддержка</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" aria-label="Вернуться наверх">↑</a>
+
+  <script>
+    const burger = document.getElementById('burger');
+    const nav = document.getElementById('nav');
+
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('burger--active');
+      nav.classList.toggle('nav--open');
+      document.body.classList.toggle('no-scroll');
+    });
+
+    // Закрываем меню при клике по ссылке или кнопке внутри навигации
+    nav.addEventListener('click', (event) => {
+      if (event.target.closest('a') || event.target.closest('button')) {
+        burger.classList.remove('burger--active');
+        nav.classList.remove('nav--open');
+        document.body.classList.remove('no-scroll');
+      }
+    });
+  </script>
+</body>
+</html>

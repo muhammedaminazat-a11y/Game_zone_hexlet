@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Hexlet GameZone – Магазин игр и консолей</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta
+    name="description"
+    content="Онлайн-магазин игр, консолей и аксессуаров. Быстрая доставка, выгодные цены, предзаказы новинок."
+  >
+  <link rel="stylesheet" href="style/reset.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+  <header class="header">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">
+      <img src="Image/logo.svg" alt="Логотип SynteX GameZone" width="32" height="32">
+      <span>Hexlet GameZone</span>
+    </a>
+
+    <!-- Бургер -->
+    <button class="burger" id="burger" aria-label="Открыть меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Навигация -->
+    <nav class="nav" id="nav">
+      <a href="index.html" class="nav__link ">Главная</a>
+      <a href="catalog.html" class="nav__link">Каталог</a>
+      <a href="about.html" class="nav__link">О нас</a>
+      <a href="contact.html" class="nav__link nav__link--active">Контакты</a>
+
+      <!-- Кнопка входа внутри меню (для мобильной версии) -->
+      <button class="header__cta header__cta--mobile">Войти</button>
+    </nav>
+
+    <!-- Кнопка входа для десктопа (справа в шапке) -->
+    <button class="header__cta header__cta--desktop">Войти</button>
+  </div>
+</header>
+
+
+<main>
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-title">Контакты</h1>
+      <p class="page-subtitle">
+        Есть вопросы? Напиши нам через форму обратной связи.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="contact-info">
+    <div class="container contacts-layout">
+      <form class="contact-form" action="#" method="post">
+        <div class="contact-form__group">
+          <label for="name">Имя</label>
+          <input id="name" type="text" name="name" required placeholder="Ваше имя">
+        </div>
+
+        <div class="contact-form__group">
+          <label for="email">Email или телефон</label>
+          <input
+            id="email"
+            type="text"
+            name="email"
+            required
+            placeholder="example@mail.com"
+          >
+        </div>
+
+        <div class="contact-form__group">
+          <label for="message">Сообщение</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            placeholder="Напишите ваш вопрос или предложение"
+          ></textarea>
+          <p class="contact-form__hint">
+            Отправляя форму, вы соглашаетесь с обработкой персональных данных.
+          </p>
+        </div>
+
+        <button class="btn-primary" >Отправить</button>
+      </form>
+      </div>
+
+      <div class="contacts-info">
+        <p><strong>Телефон:</strong> +7 (777) 732-44-07</p>
+        <p><strong>Email:</strong> support@hexlet.kz</p>
+        <p><strong>Адрес:</strong> г. Алматы, Назарбаева, 103</p>
+        <p>
+        </p>
+      </div>
+      </div>
+  </section>
+  
+</main>
+  <script>
+    const burger = document.getElementById('burger');
+    const nav = document.getElementById('nav');
+
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('burger--active');
+      nav.classList.toggle('nav--open');
+      document.body.classList.toggle('no-scroll');
+    });
+
+    // Закрываем меню при клике по ссылке или кнопке внутри навигации
+    nav.addEventListener('click', (event) => {
+      if (event.target.closest('a') || event.target.closest('button')) {
+        burger.classList.remove('burger--active');
+        nav.classList.remove('nav--open');
+        document.body.classList.remove('no-scroll');
+      }
+    });
+  </script>
+</body>
+</html>
